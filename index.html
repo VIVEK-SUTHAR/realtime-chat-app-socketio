@@ -11,11 +11,54 @@
     <script defer src="./script.js"></script>
     <!-- this on calls io -->
     <title>Real Time Chat App</title>
+    <style>
+      #message-container {
+        width: 50%;
+        margin: auto;
+        padding: 15px;
+        min-height: 60vh;
+        background-color: antiquewhite;
+      }
+      .message {
+        padding: 10px;
+        margin-block: 5px;
+        width:max-content;
+        border-radius: 10px;
+        height: auto;
+        font-size: 1.5rem;
+        background-color: aliceblue;
+      }
+      #send-container{
+        width: 50%;
+        margin: auto;
+        padding: 15px;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+      }
+      #message-input{
+        flex: 1;
+        padding: 10px;
+        outline: none;
+        border: none;
+      }
+      #send-button{
+        border: none;
+      }
+      .joined{
+        background-color: lightblue;
+        margin: auto;
+        width: max-content;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <div id="message-container"></div>
     <form id="send-container">
-      <input type="text" name="" id="message-input" />
+      <input autofocus type="text" name="" id="message-input" />
       <button type="submit" id="send-button">Send</button>
     </form>
   </body>
